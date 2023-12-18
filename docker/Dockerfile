@@ -2,6 +2,8 @@ FROM php:7-cli-alpine
 
 ENV LANG=C.UTF-8
 
+ADD *.sh /
+
 WORKDIR /OLAINDEX
 
 RUN apk add --no-cache tzdata git composer && \
@@ -11,4 +13,4 @@ RUN apk add --no-cache tzdata git composer && \
     docker-php-ext-install bcmath
 
 
-ENTRYPOINT ["sh", "/workspace/sh/entrypoint.sh"]
+ENTRYPOINT ["sh", "entrypoint.sh"]
