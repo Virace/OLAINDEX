@@ -12,7 +12,7 @@
     <div class="container-tight py-6">
         <div class="text-center mb-4">
             <a href="{{ route('home') }}">
-                {{--                <img src="{{ asset('img/log.svg') }}" height="36" alt="">--}}
+                {{--                <img src="{{ secure_asset('img/log.svg') }}" height="36" alt="">--}}
                 <span class="h1">OLAINDEX Admin</span>
             </a>
         </div>

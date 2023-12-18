@@ -2,7 +2,7 @@ FROM php:7-cli-alpine
 
 ENV LANG=C.UTF-8
 
-ADD *.sh /
+ADD entrypoint.sh /entrypoint.sh
 
 WORKDIR /OLAINDEX
 

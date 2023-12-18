@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>@yield('title')</title>
-    <link rel="stylesheet" href="{{ asset('tabler/dist/css/tabler.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('tabler/dist/css/tabler-vendors.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('tabler/dist/css/tabler.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('tabler/dist/css/tabler-vendors.min.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.8.1/dist/sweetalert2.min.css">
     @stack('stylesheet')
 </head>
@@ -26,7 +26,7 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown"
                        aria-label="Open user menu">
-                        <span class="avatar avatar-sm" style="background-image: url({{ asset('img/log.svg') }})"></span>
+                        <span class="avatar avatar-sm" style="background-image: url({{ secure_asset('img/log.svg') }})"></span>
                         <div class="d-none d-xl-block ps-2">
                             <div>{{ Auth::user()->name }}</div>
                             <div class="mt-1 small text-muted">管理员</div>
@@ -90,9 +90,9 @@
         </footer>
     </div>
 </div>
-<script src="{{ asset('tabler/dist/libs/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
-<script src="{{ asset('tabler/dist/libs/jquery/dist/jquery.slim.min.js') }}"></script>
-<script src="{{ asset('tabler/dist/js/tabler.min.js') }}"></script>
+<script src="{{ secure_asset('tabler/dist/libs/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ secure_asset('tabler/dist/libs/jquery/dist/jquery.slim.min.js') }}"></script>
+<script src="{{ secure_asset('tabler/dist/js/tabler.min.js') }}"></script>
 <script src="https://cdn.staticfile.org/axios/0.21.0/axios.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.8.1/dist/sweetalert2.all.min.js"></script>
 @stack('scripts')

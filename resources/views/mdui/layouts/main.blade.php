@@ -22,8 +22,8 @@
         crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css">
-    <link rel="stylesheet" href="{{ asset('css/mdui.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/notosans.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/mdui.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/notosans.css') }}">
     @stack('stylesheet')
     {!! setting('stats_code') !!}
     <script>
